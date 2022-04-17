@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id="main">
+  <header>
+    <h1 id="title">Rate my takeaway Survey</h1>
+    <p id="tribute-info"><em>What is your favourite takeaway meal?</em></p>
+  </header>
+  <div id="img-div">
+    <img class="responsive" id="image" src="https://media.thetab.com/blogs.dir/90/files/2021/05/maxresdefault-2-e1621956665805-940x480.jpg" alt:"Danny Malin munching on a Full English">
+    <figcaption id="img-caption">
+      Danny Malin munching on a Full English - Click <a id="tribute-link" href="https://www.youtube.com/c/RateMyTakeaway" target="_blank"> here</a> to visit Danny's Youtube channel.
+    </figcaption><br>
+  </div>
+
+  <div class="container">
+    <form action="action_page.php" id="survey-form">
+
+      <label for="name">Name</label>
+      <input type="text" id="name-label" name="name" placeholder="Your name.. " required><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email-label" name="email" placeholder="Your email.." required><br><br>
+
+      <label for="quantity">Age</label>
+      <input type="number" id="number-label" name="quantity" min="0" max="100"><br><br>
+
+      <label for="dropdown">Where did you hear about us?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="youtube">Youtube</option>
+        <option value="friend">Friend</option>
+        <option value="wordofmouth">Word of mouth</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label for="Fish&Chips"><input id="Fish" type="checkbox" name="takeaway">Fish & Chips</label><br><br>
+
+      <label for="Pizza"><input id="Pizza" type="checkbox" name="takeaway">Pizza</label><br><br>
+
+      <label for="Kebab"><input id="Kebab" type="checkbox" name="takeaway">Kebab</label><br><br>
+
+      <label for="Indian"><input id="Indian" type="checkbox" name="takeaway">Indian</label><br><br>
+
+      <label for="Chinese"><input id="Chinese" type="checkbox" name="takeaway">Chinese</label><br><br>
+
+      <label for="burgers"><input id="burgers" type="checkbox" name="takeaway">Burgers</label><br><br>
+
+      <label for="other">Other</label>
+      <textarea id="other" name="other" placeholder="Write something.." style="height:15px"></textarea><br><br>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
